@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import com.solo.charadesapp.R
 import com.solo.charadesapp.databinding.FragmentGameBinding
 
@@ -44,6 +45,10 @@ class GameFragment : Fragment() {
             viewModel.onIncorrect()
             updateWordText()
             updateScoreText()
+        }
+
+       binding.endGameText.setOnClickListener{view : View ->
+            view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToScoreFragment(viewModel.score,1,2,3,4,5))
         }
 
         return binding.root

@@ -17,5 +17,33 @@
         android:id="@+id/gameFragment"
         android:name="com.solo.charadesapp.screens.game.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.solo.charadesapp.screens.score.ScoreFragment"
+        android:label="ScoreFragment"
+        tools:layout="@layout/fragment_score">
+        <argument
+            android:name="theScore"
+            app:argType="integer" />
+        <argument
+            android:name="one"
+            app:argType="integer" />
+        <argument
+            android:name="two"
+            app:argType="integer" />
+        <argument
+            android:name="three"
+            app:argType="integer" />
+        <argument
+            android:name="four"
+            app:argType="integer" />
+        <argument
+            android:name="five"
+            app:argType="integer" />
+    </fragment>
 </navigation>

@@ -7,4 +7,6 @@
     <string name="the_word_is">The word is...</string>
     <string name="got_it">Got it</string>
     <string name="end_game">End Game</string>
+    <string name="you_scored">you scored</string>
+    <string name="play_again">Play Again</string>
 </resources>
