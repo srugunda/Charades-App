@@ -10,6 +10,10 @@
             name="theWord"
             type="String" />
 
+<!--        <variable-->
+<!--            name="gameViewModel"-->
+<!--            type="com.solo.charadesapp.screens.game.GameViewModel" />-->
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
